@@ -7,35 +7,55 @@ public class barras
     {
         return foto;
     }
-    protected int fome;
-    protected int sede;
-    protected int felicidade;
+    protected double Fome;
+    protected double Sede;
+    protected double Felicidade;
 
     public barras()
     {
-        fome = 0;
-        sede = 0;
-        felicidade = 0;
+        Fome = 0;
+        Sede = 0;
+        Felicidade = 0;
     }
-     public void Setfome(int f)
+   public void SetFome(int f)
      {
         if (f <=1 || f >=0)
-        fome = f;
+        Fome = f;
         else if (f > 1)
-        fome = 1;
+        Fome = 1;
         else
-        fome = 0;
+        Fome = 0;
      }
-     public int GetFome()
+
+   public void SetSede(int f)
      {
-        return fome;
+        if (f <=1 || f >=0)
+        Sede = f;
+        else if (f > 1)
+        Sede = 1;
+        else
+        Sede = 0;
      }
-     public int GetSede()
+
+   public void SetFelicidade(int f)
      {
-        return sede;
+        if (f <=1 || f >=0)
+        Felicidade = f;
+        else if (f > 1)
+        Felicidade = 1;
+        else
+        Felicidade = 0;
      }
-     public int GetFelicidade()
+   public int GetFome()
      {
-        return felicidade;
+        return Fome;
+     }
+   public int GetSede()
+     {
+        return Sede;
+     }
+   public int GetFelicidade()
+     {
+        return Felicidade;
      }
 }
