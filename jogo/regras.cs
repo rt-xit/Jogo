@@ -1,5 +1,5 @@
 namespace configuração;
-public class barras
+public class regras
 {
     protected string foto;
 
@@ -11,13 +11,13 @@ public class barras
     protected double Sede;
     protected double Felicidade;
 
-    public barras()
+    public regras()
     {
         Fome = 0;
         Sede = 0;
         Felicidade = 0;
     }
-   public void SetFome(int f)
+   public void SetFome(double f)
      {
         if (f <=1 || f >=0)
         Fome = f;
@@ -27,7 +27,7 @@ public class barras
         Fome = 0;
      }
 
-   public void SetSede(int f)
+   public void SetSede(double f)
      {
         if (f <=1 || f >=0)
         Sede = f;
@@ -37,7 +37,7 @@ public class barras
         Sede = 0;
      }
 
-   public void SetFelicidade(int f)
+   public void SetFelicidade(double f)
      {
         if (f <=1 || f >=0)
         Felicidade = f;
@@ -46,15 +46,15 @@ public class barras
         else
         Felicidade = 0;
      }
-   public int GetFome()
+   public double GetFome()
      {
         return Fome;
      }
-   public int GetSede()
+   public double GetSede()
      {
         return Sede;
      }
-   public int GetFelicidade()
+   public double GetFelicidade()
      {
         return Felicidade;
      }

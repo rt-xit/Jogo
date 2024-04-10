@@ -1,14 +1,14 @@
 using configuração;
 
-nomespace jogo;
+namespace jogo;
 
-public class Caranguejo : barras
+public class Caranguejo : regras
 {
  
  public Caranguejo()
  {
     Fome=0.5;
     Sede=0.5;
-    Feliz=0.5;
+    Felicidade=0.5;
  }
 }
