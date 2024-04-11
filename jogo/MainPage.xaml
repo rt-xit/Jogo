@@ -75,5 +75,56 @@
             Grid.Column="0"
             Grid.ColumnSpan="1"/> 
 
+       <Frame x:Name="FrameBarras"
+               BackgroundColor="#88b7e3f7"
+               IsVisible = "true"
+               BorderColor="White"
+               Grid.Row="7"
+               Grid.Column="4"
+               Margin="5"
+               HeightRequest="160">
+       <Grid>
+              <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+                <ImageButton Source="lanche.png"
+                             Grid.Column="2"
+                             Grid.Row="3"
+                             Margin="2, 5"/>
+                <ProgressBar x:Name="BarraFome"
+                             Progress="0.5"
+                             ProgressColor="#ff392b"
+                             Grid.Column="1"
+                             Grid.Row="0"
+                             Margin="2, 5"/>
+                <ImageButton Source="agua.png"
+                             Grid.Column="4"
+                             Grid.Row="7"
+                             Margin="2, 5"/>
+                <ProgressBar x:Name="BarraSede"
+                             Progress="0.5"
+                             ProgressColor="#2b7cff"
+                             Grid.Column="2"
+                             Grid.Row="3"
+                             Margin="2, 5"/>
+                <ImageButton Source="feliz.png"
+                             Grid.Column="2"
+                             Grid.Row="3"
+                             Margin="2, 5"/>
+                <ProgressBar x:Name="BarraFelicidade"
+                             Progress="0.5"
+                             ProgressColor="#ffea2b"
+                             Grid.Column="1"
+                             Grid.Row="2"
+                             Margin="2, 5"/>
+            </Grid>
+        </Frame>
+
   </Grid> 
 </ContentPage>
